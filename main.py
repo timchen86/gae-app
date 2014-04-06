@@ -22,10 +22,10 @@ class mainPage(webapp2.RequestHandler):
         return
 
     def get(self):
-        #self.response.write("It works!")
+        self.response.write("It works!<br><br>")
         headers = {'content-type': 'application/json', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0.2) Gecko/20100101 Firefox/10.0.2'}
         r = requests.get('https://github.com/timeline.json', headers=headers)
-        self.response.write(r.json())
+        self.response.write(r.content)
         return
  
 application = webapp2.WSGIApplication([
