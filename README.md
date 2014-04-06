@@ -1,4 +1,3 @@
-sync-wave
+gae-app
 =========
 
-import wave data from site to GAE datastore
