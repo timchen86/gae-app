@@ -1,0 +1,4 @@
+cron:
+- description: scheduled task
+  url: /task
+  schedule: every 50 hours
